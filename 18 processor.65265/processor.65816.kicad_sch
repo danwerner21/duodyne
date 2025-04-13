@@ -619,10 +619,10 @@
       (reference "RN8") (unit 1) (value "10K") (footprint "Resistor_THT:R_Array_SIP9")
     )
     (path "/00000000-0000-0000-0000-000064122c47/a36a1dfd-73aa-4ce1-ab79-19099a226cf9"
-      (reference "SP1") (unit 1) (value "SPEAKER") (footprint "Jameco PCB Speaker 30mm 135722:Jameco PCB Speaker 30mm 135722")
+      (reference "SP1") (unit 1) (value "SPEAKER") (footprint "CUSTOM:JAMECO SPEAKER")
     )
     (path "/00000000-0000-0000-0000-000064122c47/2ff70f7c-e120-4447-9cb1-b926416ae64d"
-      (reference "SP2") (unit 1) (value "SPEAKER") (footprint "Jameco PCB Speaker 30mm 135722:Jameco PCB Speaker 30mm 135722")
+      (reference "SP2") (unit 1) (value "SPEAKER") (footprint "CUSTOM:JAMECO SPEAKER")
     )
     (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/804b5f9b-30de-4640-b49b-0af90de7dbe2"
       (reference "SW1") (unit 1) (value "RESET") (footprint "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx58-2LFS")
@@ -722,21 +722,6 @@
     )
     (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/71857ca6-ca59-4fad-8cc2-ab639300c160"
       (reference "U15") (unit 1) (value "DS1233") (footprint "Package_TO_SOT_THT:TO-92L_HandSolder")
-    )
-    (path "/00000000-0000-0000-0000-0000643138dc/8acdc0a5-d4c0-44af-9257-05275b0e13e2"
-      (reference "U16") (unit 1) (value "74LS08") (footprint "Package_DIP:DIP-14_W7.62mm_Socket_LongPads")
-    )
-    (path "/00000000-0000-0000-0000-0000643138dc/7f00f120-1ec1-4eaf-8cbc-17f15f44cd54"
-      (reference "U16") (unit 2) (value "74LS08") (footprint "Package_DIP:DIP-14_W7.62mm_Socket_LongPads")
-    )
-    (path "/00000000-0000-0000-0000-0000643138dc/3364e399-4de4-42d1-bb35-11a32bc195e2"
-      (reference "U16") (unit 3) (value "74LS08") (footprint "Package_DIP:DIP-14_W7.62mm_Socket_LongPads")
-    )
-    (path "/00000000-0000-0000-0000-0000643138dc/f1ded0cf-3397-482d-8cde-6f8e74a487a1"
-      (reference "U16") (unit 4) (value "74LS08") (footprint "Package_DIP:DIP-14_W7.62mm_Socket_LongPads")
-    )
-    (path "/00000000-0000-0000-0000-0000643138dc/fceff695-6ef5-407c-8017-22315d063f7b"
-      (reference "U16") (unit 5) (value "74LS08") (footprint "Package_DIP:DIP-14_W7.62mm_Socket_LongPads")
     )
     (path "/00000000-0000-0000-0000-0000643138dc/3eb7eb84-15c7-4cc2-b46e-d4d4712506d7"
       (reference "U17") (unit 1) (value "74LS00") (footprint "Package_DIP:DIP-14_W7.62mm_Socket_LongPads")
