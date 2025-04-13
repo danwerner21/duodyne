@@ -1,0 +1,31 @@
+Name     GAL-U10 ;
+PartNo   00 ;
+Date     10/16/2023 ;
+Revision 01 ;
+Designer Dan Werner ;
+Company  a ;
+Assembly None ;
+Location  ;
+Device   g16v8a ;
+
+PIN   1   = phi         ; /*                */
+PIN   2   = rw          ; /*                */
+PIN   3   = vda         ; /*                */
+PIN   4   = vpa         ; /*                */
+PIN   6   = io          ; /*                */
+PIN   7   = bus         ; /*                */
+PIN   9   = onboardio   ; /*                */
+
+
+PIN   19  = mreq    		; /*                                 */
+PIN   18  = iorq    		; /*                                 */
+PIN   16  = !rd     		; /*                                 */
+PIN   15  = !wr     		; /*                                 */
+PIN   14  = data_dir		; /*                                 */
+
+
+rd   = phi &  rw & ( vda # vpa) ;
+wr   = phi & !rw & ( vda # vpa) ;
+mreq = bus # !io ;
+iorq = io # !phi # !vda # vpa ;
+data_dir = !(rw & !bus) # !onboardio ;
