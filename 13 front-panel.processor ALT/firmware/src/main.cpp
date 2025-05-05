@@ -3,8 +3,8 @@
 #include <SPI.h>
 #include <SD.h>
 #include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+//#include <Adafruit_GFX.h>
+//#include <Adafruit_SSD1306.h>
 
 #include "retrowifi.h"
 #include "pins.h"
@@ -26,14 +26,14 @@ void setup()
   i2cSetup();
 
   // Setup the OLED Display
-  SetupDisplay();
+  //SetupDisplay();
 
   // Setup the SD Card
   //SetupSD();
 
   // Setup Wifi
   SetupTelnet();
-
+/*
   // Setup for OTA update
   ArduinoOTA
       .onStart([]()
@@ -67,15 +67,20 @@ void setup()
     } });
 
   ArduinoOTA.begin();
+
+  pinMode(DUODYNEI2C_SDA,INPUT);
+  pinMode(DUODYNEI2C_SCL,INPUT);
+  */
 }
 
 void loop()
 {
 
+
   while (true)
   {
-    if (WiFi.isConnected())
-      ArduinoOTA.handle();
+//    if (WiFi.isConnected())
+//      ArduinoOTA.handle();
 
     telnet.loop();
 
@@ -89,4 +94,5 @@ void loop()
       ConfigureWiFi();
     }
   }
+
 }

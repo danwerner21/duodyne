@@ -1,16 +1,16 @@
 #include <ArduinoOTA.h>
-#include <HardwareSerial.h>
-#include <SPI.h>
-#include <SD.h>
-#include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+//#include <HardwareSerial.h>
+//#include <SPI.h>
+//#include <SD.h>
+//#include <Wire.h>
+//#include <Adafruit_GFX.h>
+////#include <Adafruit_SSD1306.h>
 
 #include "retrowifi.h"
 #include "pins.h"
 
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1); // Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
-
+//Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1); // Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
+/*
 void SetupDisplay()
 {
         Wire.setPins(DISPLAYI2C_SDA, DISPLAYI2C_SCL);
@@ -30,3 +30,4 @@ void SetupDisplay()
 
         display.display();
 }
+        */

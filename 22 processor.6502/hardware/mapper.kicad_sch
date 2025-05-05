@@ -6,8 +6,8 @@
 
   (title_block
     (title "Duodyne 6502 CPU board")
-    (date "2025-04-12")
-    (rev "V0.8")
+    (date "2025-04-26")
+    (rev "V0.9")
   )
 
   (lib_symbols

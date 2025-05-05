@@ -24,17 +24,18 @@ PIN   19  = h_out      ; /*                                 */
 
 /* ****  MEMORY MAP ******
 
-000000..00DEFF  EXTERNAL ADDRESS
-XXDF00..XXDFFF	I/O AREA (BOARD AND EXTERNAL)
+000000..0002FF  EXTERNAL ADDRESS
+000300..0003FF	I/O AREA (BOARD AND EXTERNAL)
+000400..00DFFF  EXTERNAL ADDRESS
 00E000..00FFFF	8K ONBOARD ROM
 010000..3FFFFF	EXTERNAL ADDRESS
 
 ************************ */
 not_high	= a21 #  a20 #  a19 #  a18 #  a17 #  a16 ;
-DF 		    = !a15 # !a14 # a13 # !a12 # !a11 # !a10 # !a9  # !a8 ;
-E0 		    = !a15 # !a14 # !a13 ;
+IOAREA 		= a15 # a14 # a13 # a12 # a11 # a10 # !a9  # !a8 ;
+ROM             = !a15 # !a14 # !a13 ;
 
 h_out  =	not_high  ;
-io	    =	DF ; /* h_in # DF ; */
-cs_rom	=	h_in # E0 ;
+io	    =   IOAREA ;
+cs_rom	=	h_in # ROM ;
 cs_bus	=	!cs_rom 			;

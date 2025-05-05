@@ -8,8 +8,10 @@
 
 #define DISPLAYI2C_SCL  36
 #define DISPLAYI2C_SDA  37
-#define DUODYNEI2C_SCL  21
-#define DUODYNEI2C_SDA  35
+//#define DUODYNEI2C_SCL  21
+//#define DUODYNEI2C_SDA  35
+static const uint8_t DUODYNEI2C_SDA = 8;
+static const uint8_t DUODYNEI2C_SCL = 9;
 
 #define  ConsoleSerialTX 45     // 38
 #define  ConsoleSerialRX 38     // 45

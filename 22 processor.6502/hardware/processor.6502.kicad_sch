@@ -6,8 +6,8 @@
 
   (title_block
     (title "Duodyne 6502 CPU board")
-    (date "2025-04-12")
-    (rev "V0.8")
+    (date "2025-04-26")
+    (rev "V0.9")
   )
 
   (lib_symbols
@@ -137,9 +137,6 @@
     )
     (path "/00000000-0000-0000-0000-000064122c47/00000000-0000-0000-0000-000064147ae5"
       (reference "#PWR01") (unit 1) (value "VCC") (footprint "")
-    )
-    (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/91342838-3b75-4941-9e57-7db0dec12e62"
-      (reference "#PWR02") (unit 1) (value "VCC") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000064122c47/00000000-0000-0000-0000-000064147aeb"
       (reference "#PWR03") (unit 1) (value "GND") (footprint "")
@@ -468,9 +465,6 @@
     (path "/00000000-0000-0000-0000-0000643138dc/00000000-0000-0000-0000-00005ec2d28f"
       (reference "C46") (unit 1) (value "47uF") (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm")
     )
-    (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/7f6b5786-d184-4a0f-acfa-2ffc47c04498"
-      (reference "D1") (unit 1) (value "LED") (footprint "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm")
-    )
     (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/f3f487d6-fbae-44ff-b1a7-bc601ac8342b"
       (reference "D2") (unit 1) (value "LED") (footprint "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm")
     )
@@ -489,9 +483,6 @@
     (path "/00000000-0000-0000-0000-0000643138dc/00000000-0000-0000-0000-000069da04ba"
       (reference "D7") (unit 1) (value "LED") (footprint "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm")
     )
-    (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/ff24c9f6-bcfb-4c65-930a-f2287e2c15e6"
-      (reference "D8") (unit 1) (value "LED") (footprint "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm")
-    )
     (path "/00000000-0000-0000-0000-000064122c47/17929d5a-0e2b-4d15-a417-3870dad7c514"
       (reference "D9") (unit 1) (value "LED") (footprint "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z2.0mm")
     )
@@ -505,10 +496,10 @@
       (reference "J1") (unit 1) (value "IO Address Select") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical")
     )
     (path "/ff72463c-5183-4732-aac6-18e75b0f54a5/ccdb0986-66fd-45c0-b020-9f08c2cfb945"
-      (reference "J2") (unit 1) (value "6809 RESET") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal")
+      (reference "J2") (unit 1) (value "6502 RESET") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal")
     )
     (path "/ff72463c-5183-4732-aac6-18e75b0f54a5/59e4b649-c943-4500-8e90-5772679f08ed"
-      (reference "J3") (unit 1) (value "6809 ONLY") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal")
+      (reference "J3") (unit 1) (value "6502 ONLY") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal")
     )
     (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/30c2f79b-460c-4697-a0dc-5e0b78c977f4"
       (reference "J4") (unit 1) (value "RES SEL") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
@@ -570,9 +561,6 @@
     (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/31da51c9-15d0-4383-9810-d367a0b832ca"
       (reference "R5") (unit 1) (value "470") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
     )
-    (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/5b2faa4f-69ab-498c-bfc8-7fc425e2145e"
-      (reference "R6") (unit 1) (value "470") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
-    )
     (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/3d6e5635-b8f1-4698-b22a-ceff57ee5c0c"
       (reference "R7") (unit 1) (value "10") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
     )
@@ -581,12 +569,6 @@
     )
     (path "/ff72463c-5183-4732-aac6-18e75b0f54a5/beff5793-ec2c-471b-8ded-c400c5c5a417"
       (reference "R9") (unit 1) (value "1KΩ") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
-    )
-    (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/bc5b0cd7-3934-4a93-93a3-9805f4854304"
-      (reference "R10") (unit 1) (value "470") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
-    )
-    (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/6ea24336-2578-438e-96ba-6bc357ace75b"
-      (reference "R11") (unit 1) (value "1K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-000064122c47/cdefb784-fd4f-4e83-a84b-19a09abe0fa7"
       (reference "R12") (unit 1) (value "470") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
@@ -618,7 +600,7 @@
     (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/3399f586-f40c-4252-8731-5478a1466223"
       (reference "U1") (unit 1) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm_Socket_LongPads")
     )
-    (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/aa1d4a40-f643-4fdc-88f7-7f30af87ef66"
+    (path "/00000000-0000-0000-0000-0000643138dc/10e72da7-6533-4e7d-b946-99f47a22c77c"
       (reference "U1") (unit 2) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm_Socket_LongPads")
     )
     (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/d2606db3-962d-4400-b0e1-1f9c67dbadf6"
@@ -660,8 +642,8 @@
     (path "/00000000-0000-0000-0000-0000643138dc/00000000-0000-0000-0000-0000603a96fc"
       (reference "U4") (unit 7) (value "74LS07") (footprint "Package_DIP:DIP-14_W7.62mm_Socket_LongPads")
     )
-    (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/078fdd53-c343-415b-8858-395bb443a0b6"
-      (reference "U5") (unit 1) (value "27C010") (footprint "Package_DIP:DIP-32_W15.24mm_Socket_LongPads")
+    (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/8024226a-81a2-4896-903e-7a7058b9520b"
+      (reference "U5") (unit 1) (value "27C64") (footprint "Package_DIP:DIP-28_W15.24mm")
     )
     (path "/00000000-0000-0000-0000-00006439f52f/c0965275-fc51-4077-a3ed-63b9faedca92"
       (reference "U6") (unit 1) (value "74LS244") (footprint "Package_DIP:DIP-20_W7.62mm_Socket_LongPads")
@@ -669,7 +651,7 @@
     (path "/00000000-0000-0000-0000-000064122c47/44e1c01e-6ea7-4a8a-aaec-d512a7d1e571"
       (reference "U7") (unit 1) (value "74LS14") (footprint "Package_DIP:DIP-14_W7.62mm_Socket_LongPads")
     )
-    (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/46a47f17-4b01-41c5-b11a-01bb89477b3a"
+    (path "/00000000-0000-0000-0000-0000643138dc/68d7e12b-fc63-410a-8796-60ba538c3e17"
       (reference "U7") (unit 2) (value "74LS14") (footprint "Package_DIP:DIP-14_W7.62mm_Socket_LongPads")
     )
     (path "/ff72463c-5183-4732-aac6-18e75b0f54a5/2f6dd24e-3168-4cbe-9932-8ece8498d39b"
@@ -741,8 +723,8 @@
     (path "/ff72463c-5183-4732-aac6-18e75b0f54a5/7e959a4b-21e2-4c65-89cc-e91a41aca799"
       (reference "U22") (unit 1) (value "74LS688") (footprint "Package_DIP:DIP-20_W7.62mm_Socket_LongPads")
     )
-    (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/ece9d106-6fcc-4cff-9d98-73eba5a0d725"
-      (reference "U23") (unit 1) (value "W65C02SxPL") (footprint "Package_LCC:PLCC-44_THT-Socket")
+    (path "/ba44e7a1-24af-4410-9b7f-d27d944b565f/ca920cab-13af-4411-b5cf-da18091a0f64"
+      (reference "U23") (unit 1) (value "6502") (footprint "Package_DIP:DIP-40_W15.24mm_Socket_LongPads")
     )
     (path "/00000000-0000-0000-0000-000064122c47/edd845d4-de30-4585-ad9a-4fa364eb4777"
       (reference "U24") (unit 1) (value "74LS670") (footprint "Package_DIP:DIP-16_W7.62mm_Socket_LongPads")

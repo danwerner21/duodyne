@@ -85,8 +85,6 @@ The first version of Unix ported was LSX Unix (https://www.mailcom.com/lsx/), wh
 ## Bugs/To Do
 * Add Xmodem to Unix
 * Add Vi to Unix
-* CF card ATA registers have INCOMPLETE DECODING 
-* Memory mapper have INCOMPLETE DECODING
 * Add Serial port drivers for off board Duodyne hardware
 * Add Mass storage drivers for off board Duodyne hardware
 
